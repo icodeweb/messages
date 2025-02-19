@@ -34,3 +34,15 @@ let messages = [
     }
 ]
 
+messages.forEach((message, index) => {
+    setTimeout(() => {
+        let messageElemnt = document.createElement("p");
+        messageElemnt.classList.add("message", "loading");
+        messageElemnt.innerText = message.message;
+        document.querySelector(".container").appendChild(messageElemnt);
+        setTimeout(() => {
+            messageElemnt.classList.remove("loading");
+        }, 1000);
+    }, (index) * 2000);
+});
+

@@ -2,17 +2,31 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
 }
 
 body {
     background-color: black;
 }
 
-span {
-    color: white;
-}
-
 .container {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    gap: 6px;
+}
+
+.message {
+    color: white;
+    font-size: 2rem;
+    background-color: #1a1a1a;
+    padding: 1rem 1.8rem;
+    width: fit-content;
+    border-radius: 40px;
+}
+
+.loading {
+    border-radius: 40px 40px 40px 0px;
+    transition: border-radius 1s ease-in-out;
 }
